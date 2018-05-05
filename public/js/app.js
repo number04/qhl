@@ -1076,7 +1076,7 @@ module.exports = function normalizeComponent (
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(11);
-module.exports = __webpack_require__(45);
+module.exports = __webpack_require__(46);
 
 
 /***/ }),
@@ -1095,7 +1095,7 @@ window.Vue = __webpack_require__(12);
 __webpack_require__(15);
 __webpack_require__(43);
 __webpack_require__(44);
-__webpack_require__(50);
+__webpack_require__(45);
 
 /***/ }),
 /* 12 */
@@ -30787,16 +30787,6 @@ if (document.getElementById("franchise")) {
 /* 45 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 46 */,
-/* 47 */,
-/* 48 */,
-/* 49 */,
-/* 50 */
-/***/ (function(module, exports) {
-
 if (document.getElementById("schedule")) {
 
     // Vue.component('roster', require('./components/franchise/roster.vue'));
@@ -30838,6 +30828,12 @@ if (document.getElementById("schedule")) {
         }
     });
 }
+
+/***/ }),
+/* 46 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
