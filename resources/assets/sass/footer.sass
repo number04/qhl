@@ -1,0 +1,44 @@
+footer
+    @include flexbox-center
+    height: 50px
+    width: 100%
+    background-color: $primary-white
+    margin-top: 8px
+    animation: loading 1.6s
+
+    @keyframes loading
+        0%
+            opacity: 0
+
+        100%
+            opacity: 1
+
+    > ul li
+        display: inline-block
+
+        &:nth-child(2)
+            > span
+                border-left: solid 2px $primary
+                margin: 0px 4px 0px 8px
+
+        &:nth-child(n+3)
+            > a
+                @include flexbox-center
+                border-radius: 50%
+                height: 28px
+                width: 28px
+                background-color: $primary-dark
+                margin: 0px 4px
+
+                > svg
+                    width: 16px
+                    height: 16px
+                    fill: $primary-white
+
+@media only screen and (min-width: 375px)
+    footer
+        margin-top: 16px 
+
+@media only screen and (min-width: 694px)
+    footer
+        margin-top: 32px

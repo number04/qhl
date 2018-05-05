@@ -1,0 +1,147 @@
+#franchise
+    @include flexbox-center-wrap
+    max-width: 1024px
+    width: 98%
+    margin: auto
+    margin-top: 8px
+    animation: loading 1.6s
+
+    @keyframes loading
+        0%
+            opacity: 0
+
+        100%
+            opacity: 1
+
+    .header
+        @include flexbox-center
+        margin: auto
+        width: 100%
+        height: 80px
+        line-height: 80px
+        background-color: $primary-white
+        justify-content: space-between     
+
+        span
+            font-size: 20px
+            text-transform: capitalize
+            font-family: Monoton    
+
+            @for $i from 1 through 5
+                &.#{franchise}-#{$i}
+                    color: nth($franchise-colors, $i)
+
+            &:first-of-type
+                margin: auto
+                     
+            &:last-of-type
+                display: none
+
+    .table
+        width: 100%
+        background-color: $primary-white
+
+        div
+            @include flexbox-center
+            border-bottom: 0.09em solid $primary
+            margin: auto
+            width: 96%
+            text-transform: capitalize
+        
+            &:first-of-type
+                border-bottom: none
+
+                span
+                    font-size: 12px
+                    height: 32px
+                    line-height: 32px
+                    font-weight: $thin
+                    text-transform: uppercase
+                    background-color: $primary
+
+                    &:nth-of-type(4)
+                        font-weight: $thin
+
+            &:last-of-type
+                border-bottom: none
+
+            span
+                display: table-cell
+                height: 36px
+                line-height: 36px
+                text-align: center
+
+                &:nth-of-type(1)
+                    width: 36px
+
+                // player
+                &:nth-of-type(2)
+                    padding-left: 6px
+                    text-align: left
+                    width: calc(100% - 36px)
+                    font-size: 15px
+
+                // info - statistics
+                &:nth-of-type(n+3)
+                    font-weight: $extra-light
+                    width: 16%
+
+        &:last-of-type
+            div
+                &:last-of-type
+                    padding-bottom: 12px
+
+@media only screen and (min-width: 375px)
+    #franchise
+        margin-top: 16px 
+        width: 90%
+
+        .table
+            div
+                span
+                    // player
+                    &:nth-of-type(2)
+                        font-size: 16px
+
+@media only screen and (min-width: 425px)
+    #franchise
+        .header
+            height: 110px
+            line-height: 110px   
+
+            span
+                font-size: 24px
+
+@media only screen and (min-width: 507px)
+    #franchise
+        .header
+            span
+                font-size: 28px
+
+@media only screen and (min-width: 694px)
+    #franchise
+        margin-top: 32px
+
+        .header   
+            span
+                font-size: 28px
+
+                &:first-of-type
+                    margin: 0px
+                    padding-left: 28px
+                        
+                &:last-of-type
+                    display: inline
+                    padding-right: 28px
+
+@media only screen and (min-width: 768px)
+    #franchise
+        .header   
+            span
+                font-size: 32px
+
+@media only screen and (min-width: 1024px)
+    #franchise
+        .header   
+            span
+                font-size: 42px

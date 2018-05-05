@@ -1,0 +1,465 @@
+#landing
+    @include flexbox-center-wrap
+    width: 98%
+    margin: auto
+    margin-top: 8px
+    animation: loading 1.6s
+
+    @keyframes loading
+        0%
+            opacity: 0
+
+        100%
+            opacity: 1
+
+    .container                
+        &.outer-1
+            height: 1000px
+            width: 100%
+            @include flexbox-center-wrap
+
+            .schedule
+                @include flexbox-center-wrap
+                width: 100%
+                height: calc(35% - 8px)
+                margin: auto   
+                margin: 4px 0px 4px 0px
+                background-color: $primary-white
+
+                .date
+                    @include flexbox-center
+                    text-align: center
+                    width: 96%
+                    height: calc(38% - 2px)
+                    border-bottom: 2px solid $primary
+
+                    div
+                        width: 50%
+                        height: 80%
+                        @include flexbox-center-wrap
+
+                        &:first-of-type
+                            border-right: 1px solid $primary    
+
+                            span
+                                width: 100%
+
+                                &:first-of-type
+                                    font-family: Monoton
+                                    font-size: 36px
+
+                                &:last-of-type
+                                    font-weight: $light
+                                    font-size: 20px
+                                    position: relative
+                                    top: -4px
+
+                        &:last-of-type
+                            svg
+                                height: 42px
+                                width: 42px
+                                fill: $primary-black
+
+                .game
+                    @include flexbox-center
+                    width: 96%
+                    height: calc(22% - 2px)
+                    border-bottom: 2px solid $primary
+
+                    div    
+                        height: 100%
+                        height: 80%
+                        text-transform: uppercase                   
+
+                        &:first-of-type
+                            @include flexbox-center-wrap
+                            width: 50%
+                            font-weight: $regular
+                            border-right: 1px solid $primary
+
+                            span
+                                @include flexbox-center
+                                width: 100%
+                                padding-left: 16px
+                                justify-content: flex-start
+
+                                svg
+                                    padding-right: 8px
+                                    height: 18px
+                                    width: 18px
+                                    
+                                    &.franchise-inf
+                                        fill: $franchise-1
+
+                                    &.franchise-frc
+                                        fill: $franchise-2
+
+                                    &.franchise-wol
+                                        fill: $franchise-5
+
+                                    &.franchise-upw
+                                        fill: $franchise-4
+
+                                    &.franchise-fip
+                                        fill: $franchise-3
+
+                        &:last-of-type
+                            @include flexbox-center
+                            width: 50%
+                            font-weight: $thin
+                    
+
+                .bye
+                    @include flexbox-center
+                    width: 96%
+                    height: 20%
+
+                    div 
+                        @include flexbox-center 
+                        height: 80%
+                        text-transform: uppercase                   
+
+                        &:first-of-type     
+                            width: 50%
+                            font-weight: $regular
+                            border-right: 1px solid $primary
+
+                            span
+                                @include flexbox-center
+                                width: 100%
+                                padding-left: 16px
+                                justify-content: flex-start
+
+                                svg
+                                    padding-right: 8px
+                                    height: 18px
+                                    width: 18px
+
+                                    &.franchise-inf
+                                        fill: $franchise-1
+
+                                    &.franchise-frc
+                                        fill: $franchise-2
+
+                                    &.franchise-wol
+                                        fill: $franchise-5
+
+                                    &.franchise-upw
+                                        fill: $franchise-4
+
+                                    &.franchise-fip
+                                        fill: $franchise-3
+
+                        &:last-of-type
+                            width: 50%
+                            font-weight: $thin
+
+
+            
+            .performance
+                @include flexbox-center
+                width: 100%
+                height: calc(35% - 8px)
+                background-color: $primary-white
+                margin: 4px 0px 4px 0px
+                position: relative
+
+                div
+                    @include flexbox-center-wrap
+                    position: relative
+                    height: 90%
+                    width: 90%
+                    border: solid 6px $injury-light
+
+                    svg.gibbston-valley
+                        z-index: 10
+                        align-self: flex-start
+                        width: 80%
+                        fill: $primary-black
+                        position: relative
+                        top: -48px
+                        animation: fade 1s
+
+                        @keyframes fade
+                            0%
+                                opacity: 0
+
+                            100%
+                                opacity: 1
+
+                    span
+                        z-index: 10
+                        width: 100%
+                        text-align: center
+                        position: relative
+                        top: -48px
+                        text-transform: capitalize
+
+                        &:first-of-type
+                            font-size: 20px
+                            font-weight: $thin                
+                        
+                        &:nth-of-type(2)
+                            height: 24px
+                            line-height: 24px
+                            font-size: 20px
+                            font-weight: $medium 
+                            top: -42px                     
+
+                    svg.background-wine
+                        position: absolute
+                        right: 5px
+                        bottom: -6px
+                        height: 220px
+                        width: 140px
+                        fill: $injury-light
+
+                > span
+                    position: absolute
+                    bottom: 20px
+                    text-transform: capitalize
+                    font-weight: $thin
+                    color: $primary-mid
+            
+            .standings
+                width: 100%
+                height: calc(30% - 8px)
+                background-color: $primary-white
+                margin: 4px 0px 4px 0px
+
+                div
+                    @include flexbox-center
+                    border-bottom: 0.09em solid $primary
+                    margin: auto
+                    width: 96%
+                    text-transform: capitalize
+
+                    &:first-of-type
+                        span
+                            font-size: 20px
+                            height: 60px
+                            line-height: 60px
+                            font-weight: $regular
+                            text-transform: uppercase
+
+                            &:nth-of-type(n+2)
+                                font-size: 12px
+                                
+
+                            &:nth-of-type(6)
+                                font-weight: $extra-light
+
+
+                    &:last-of-type
+                        border-bottom: none
+
+                    span
+                        display: table-cell
+                        height: 44px
+                        line-height: 44px
+                        text-align: center
+
+                        // player
+                        &:nth-of-type(1)
+                            padding-left: 3px
+                            text-align: left
+                            width: 100%
+
+                        // info - statistics
+                        &:nth-of-type(n+2)
+                            font-weight: $extra-light
+                            width: 16%
+
+                        &:nth-of-type(2)
+                            font-weight: $thin
+
+                        &:nth-of-type(6)
+                            font-weight: $semi-bold
+
+                        &:nth-of-type(n+7)
+                            display: none
+
+        &.outer-2
+            height: 648px
+            width: 100%
+            background-color: $primary-white
+            margin: 4px 0px
+
+            .tabs
+                @include flexbox-center
+                background-color: $primary-white
+                width: 100%
+
+                ul
+                    @include flexbox-center
+                    border-bottom: 0.09em solid $primary-mid
+                    padding-left: 0px
+                    width: 100%
+                    margin: 0px
+                    height: 50px
+                    justify-content: space-around
+                    
+                    li
+                        @include flexbox-center
+                        width: 100%
+                        text-align: center
+
+                        &.is-active
+                            a
+                                border-bottom: 0.09em solid $primary-black
+
+
+                        a
+                            border-bottom: 0.09em solid transparent
+                            cursor: pointer
+                            margin-bottom: -16px
+                            width: 100%
+                            padding-bottom: 12px       
+                            text-transform: uppercase
+                            font-weight: $regular		
+
+                            &:hover
+                                border-bottom: 0.09em solid $primary-black
+
+            .tab
+                animation: fade .6s
+
+                @keyframes fade
+                    0%
+                        opacity: 0
+
+                    100%
+                        opacity: 1
+            
+                div
+                    @include flexbox-center
+                    border-bottom: 0.09em solid $primary
+                    margin: auto
+                    width: 96%
+                    text-transform: capitalize
+
+                    &:first-of-type
+                        border-bottom: none
+
+                        span
+                            font-size: 12px
+                            height: 32px
+                            line-height: 32px
+                            font-weight: $thin
+                            text-transform: uppercase
+
+                            &:nth-of-type(4)
+                                font-weight: $thin
+
+                    &:last-of-type
+                        border-bottom: none
+
+                    span
+                        display: table-cell
+                        height: 36px
+                        line-height: 36px
+                        text-align: center
+
+                        // player
+                        &:nth-of-type(1)
+                            padding-left: 6px
+                            text-align: left
+                            width: 100%
+
+                        // info - statistics
+                        &:nth-of-type(n+2)
+                            font-weight: $extra-light
+                            width: 16%
+                        
+                        &:nth-of-type(2)
+                            @include flexbox-center
+                            
+                            svg
+                                height: 18px
+                                width: 18px
+                                
+                                &.franchise-inf
+                                    fill: $franchise-1
+
+                                &.franchise-frc
+                                    fill: $franchise-2
+
+                                &.franchise-wol
+                                    fill: $franchise-5
+
+                                &.franchise-upw
+                                    fill: $franchise-4
+
+                                &.franchise-fip
+                                    fill: $franchise-3
+
+                        &:nth-of-type(4)
+                            font-weight: $semi-bold
+
+@media only screen and (min-width: 375px)
+    #landing
+        max-width: 425px
+        margin-top: 16px 
+        width: 90%
+
+        .container
+            &.outer-1
+                .standings
+                    div
+                        &:first-of-type
+                            span
+                                font-size: 20px
+
+                                &:nth-of-type(n+2)
+                                    font-size: 12px
+
+                        span
+                            // player
+                            &:nth-of-type(1)
+                                padding-left: 6px
+                         
+@media only screen and (min-width: 694px)
+     #landing
+        max-width: 1024px
+        margin-top: 32px
+
+        .container                          
+            &.outer-1
+                height: 648px 
+
+                .schedule
+                    width: calc(50% - 4px)
+                    margin: 0px 4px 4px 0px
+                    height: calc(55% - 8px)
+                
+                .performance
+                    width: calc(50% - 4px)
+                    margin: 0px 0px 4px 4px
+                    height: calc(55% - 8px)
+
+                .standings
+                    margin: 4px 0px 4px 0px
+                    height: calc(45% - 4px)
+
+                    div
+                        span
+                            &:nth-of-type(n+7)
+                                display: inline
+
+@media only screen and (min-width: 1024px)
+    #landing
+        @include flexbox-center
+        flex-wrap: nowrap
+
+        .container                
+            &.outer-1
+                width: 65%
+                margin-right: 4px
+
+                .standings
+                    margin: 4px 0px 0px 0px
+                    height: 45%
+            
+            &.outer-2
+                width: 35%
+                margin: 0px 0px 0px 4px

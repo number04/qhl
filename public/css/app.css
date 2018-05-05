@@ -1,0 +1,1875 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800);@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);@import url(https://fonts.googleapis.com/css?family=Monoton);html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html body {
+  background-color: #EEEEEE;
+  font-family: "Raleway", Helvetica, Verdana, sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  color: #3c3b3b;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html body #app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  min-height: 100vh;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+input[type=submit] {
+  -webkit-appearance: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+ul {
+  margin: 0px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100px;
+  width: 100%;
+  background-color: white;
+}
+
+nav span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+nav span:first-of-type {
+  width: 18%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-left: 16px;
+}
+
+nav span:last-of-type {
+  width: 82%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 16px;
+}
+
+nav span h1 {
+  display: none;
+}
+
+nav span a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav span a svg {
+  height: 28px;
+  width: 28px;
+}
+
+nav span a svg.logo use {
+  fill: #3c3b3b;
+}
+
+nav span a svg.logo-inf use {
+  fill: #8c9ba5;
+}
+
+nav span a svg.logo-frc use {
+  fill: #288cd2;
+}
+
+nav span a svg.logo-wol use {
+  fill: #e2a226;
+}
+
+nav span a svg.logo-upw use {
+  fill: #e6783d;
+}
+
+nav span a svg.logo-fip use {
+  fill: #598544;
+}
+
+@media only screen and (min-width: 375px) {
+  nav span:first-of-type {
+    margin-left: 8%;
+  }
+
+  nav span:last-of-type {
+    margin-right: 8%;
+  }
+
+  nav span a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  nav span a svg {
+    height: 32px;
+    width: 32px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  nav span:first-of-type {
+    margin-left: 32px;
+    width: calc(100% - 288px);
+  }
+
+  nav span:last-of-type {
+    margin-right: 32px;
+    width: 288px;
+  }
+
+  nav span h1 {
+    display: inline;
+    margin-left: 16px;
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 100;
+  }
+
+  nav span a svg.logo {
+    height: 64px;
+    width: 64px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  nav span h1 {
+    font-size: 32px;
+  }
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  margin-top: 8px;
+  -webkit-animation: loading 1.6s;
+          animation: loading 1.6s;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+footer > ul li {
+  display: inline-block;
+}
+
+footer > ul li:nth-child(2) > span {
+  border-left: solid 2px #EEEEEE;
+  margin: 0px 4px 0px 8px;
+}
+
+footer > ul li:nth-child(n+3) > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  height: 28px;
+  width: 28px;
+  background-color: #bbbbbb;
+  margin: 0px 4px;
+}
+
+footer > ul li:nth-child(n+3) > a > svg {
+  width: 16px;
+  height: 16px;
+  fill: white;
+}
+
+@media only screen and (min-width: 375px) {
+  footer {
+    margin-top: 16px;
+  }
+}
+
+@media only screen and (min-width: 694px) {
+  footer {
+    margin-top: 32px;
+  }
+}
+
+#landing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  width: 98%;
+  margin: auto;
+  margin-top: 8px;
+  -webkit-animation: loading 1.6s;
+          animation: loading 1.6s;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#landing .container.outer-1 {
+  height: 1000px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+}
+
+#landing .container.outer-1 .schedule {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  width: 100%;
+  height: calc(35% - 8px);
+  margin: auto;
+  margin: 4px 0px 4px 0px;
+  background-color: white;
+}
+
+#landing .container.outer-1 .schedule .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 96%;
+  height: calc(38% - 2px);
+  border-bottom: 2px solid #EEEEEE;
+}
+
+#landing .container.outer-1 .schedule .date div {
+  width: 50%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+}
+
+#landing .container.outer-1 .schedule .date div:first-of-type {
+  border-right: 1px solid #EEEEEE;
+}
+
+#landing .container.outer-1 .schedule .date div:first-of-type span {
+  width: 100%;
+}
+
+#landing .container.outer-1 .schedule .date div:first-of-type span:first-of-type {
+  font-family: Monoton;
+  font-size: 36px;
+}
+
+#landing .container.outer-1 .schedule .date div:first-of-type span:last-of-type {
+  font-weight: 300;
+  font-size: 20px;
+  position: relative;
+  top: -4px;
+}
+
+#landing .container.outer-1 .schedule .date div:last-of-type svg {
+  height: 42px;
+  width: 42px;
+  fill: #3c3b3b;
+}
+
+#landing .container.outer-1 .schedule .game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 96%;
+  height: calc(22% - 2px);
+  border-bottom: 2px solid #EEEEEE;
+}
+
+#landing .container.outer-1 .schedule .game div {
+  height: 100%;
+  height: 80%;
+  text-transform: uppercase;
+}
+
+#landing .container.outer-1 .schedule .game div:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  width: 50%;
+  font-weight: 400;
+  border-right: 1px solid #EEEEEE;
+}
+
+#landing .container.outer-1 .schedule .game div:first-of-type span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding-left: 16px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#landing .container.outer-1 .schedule .game div:first-of-type span svg {
+  padding-right: 8px;
+  height: 18px;
+  width: 18px;
+}
+
+#landing .container.outer-1 .schedule .game div:first-of-type span svg.franchise-inf {
+  fill: #8c9ba5;
+}
+
+#landing .container.outer-1 .schedule .game div:first-of-type span svg.franchise-frc {
+  fill: #288cd2;
+}
+
+#landing .container.outer-1 .schedule .game div:first-of-type span svg.franchise-wol {
+  fill: #e2a226;
+}
+
+#landing .container.outer-1 .schedule .game div:first-of-type span svg.franchise-upw {
+  fill: #e6783d;
+}
+
+#landing .container.outer-1 .schedule .game div:first-of-type span svg.franchise-fip {
+  fill: #598544;
+}
+
+#landing .container.outer-1 .schedule .game div:last-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  font-weight: 100;
+}
+
+#landing .container.outer-1 .schedule .bye {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 96%;
+  height: 20%;
+}
+
+#landing .container.outer-1 .schedule .bye div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 80%;
+  text-transform: uppercase;
+}
+
+#landing .container.outer-1 .schedule .bye div:first-of-type {
+  width: 50%;
+  font-weight: 400;
+  border-right: 1px solid #EEEEEE;
+}
+
+#landing .container.outer-1 .schedule .bye div:first-of-type span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding-left: 16px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#landing .container.outer-1 .schedule .bye div:first-of-type span svg {
+  padding-right: 8px;
+  height: 18px;
+  width: 18px;
+}
+
+#landing .container.outer-1 .schedule .bye div:first-of-type span svg.franchise-inf {
+  fill: #8c9ba5;
+}
+
+#landing .container.outer-1 .schedule .bye div:first-of-type span svg.franchise-frc {
+  fill: #288cd2;
+}
+
+#landing .container.outer-1 .schedule .bye div:first-of-type span svg.franchise-wol {
+  fill: #e2a226;
+}
+
+#landing .container.outer-1 .schedule .bye div:first-of-type span svg.franchise-upw {
+  fill: #e6783d;
+}
+
+#landing .container.outer-1 .schedule .bye div:first-of-type span svg.franchise-fip {
+  fill: #598544;
+}
+
+#landing .container.outer-1 .schedule .bye div:last-of-type {
+  width: 50%;
+  font-weight: 100;
+}
+
+#landing .container.outer-1 .performance {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: calc(35% - 8px);
+  background-color: white;
+  margin: 4px 0px 4px 0px;
+  position: relative;
+}
+
+#landing .container.outer-1 .performance div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  position: relative;
+  height: 90%;
+  width: 90%;
+  border: solid 6px #f8f1f1;
+}
+
+#landing .container.outer-1 .performance div svg.gibbston-valley {
+  z-index: 10;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: 80%;
+  fill: #3c3b3b;
+  position: relative;
+  top: -48px;
+  -webkit-animation: fade 1s;
+          animation: fade 1s;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#landing .container.outer-1 .performance div span {
+  z-index: 10;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: -48px;
+  text-transform: capitalize;
+}
+
+#landing .container.outer-1 .performance div span:first-of-type {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+#landing .container.outer-1 .performance div span:nth-of-type(2) {
+  height: 24px;
+  line-height: 24px;
+  font-size: 20px;
+  font-weight: 500;
+  top: -42px;
+}
+
+#landing .container.outer-1 .performance div svg.background-wine {
+  position: absolute;
+  right: 5px;
+  bottom: -6px;
+  height: 220px;
+  width: 140px;
+  fill: #f8f1f1;
+}
+
+#landing .container.outer-1 .performance > span {
+  position: absolute;
+  bottom: 20px;
+  text-transform: capitalize;
+  font-weight: 100;
+  color: #d5d4d4;
+}
+
+#landing .container.outer-1 .standings {
+  width: 100%;
+  height: calc(30% - 8px);
+  background-color: white;
+  margin: 4px 0px 4px 0px;
+}
+
+#landing .container.outer-1 .standings div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 0.09em solid #EEEEEE;
+  margin: auto;
+  width: 96%;
+  text-transform: capitalize;
+}
+
+#landing .container.outer-1 .standings div:first-of-type span {
+  font-size: 20px;
+  height: 60px;
+  line-height: 60px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+#landing .container.outer-1 .standings div:first-of-type span:nth-of-type(n+2) {
+  font-size: 12px;
+}
+
+#landing .container.outer-1 .standings div:first-of-type span:nth-of-type(6) {
+  font-weight: 200;
+}
+
+#landing .container.outer-1 .standings div:last-of-type {
+  border-bottom: none;
+}
+
+#landing .container.outer-1 .standings div span {
+  display: table-cell;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+}
+
+#landing .container.outer-1 .standings div span:nth-of-type(1) {
+  padding-left: 3px;
+  text-align: left;
+  width: 100%;
+}
+
+#landing .container.outer-1 .standings div span:nth-of-type(n+2) {
+  font-weight: 200;
+  width: 16%;
+}
+
+#landing .container.outer-1 .standings div span:nth-of-type(2) {
+  font-weight: 100;
+}
+
+#landing .container.outer-1 .standings div span:nth-of-type(6) {
+  font-weight: 600;
+}
+
+#landing .container.outer-1 .standings div span:nth-of-type(n+7) {
+  display: none;
+}
+
+#landing .container.outer-2 {
+  height: 648px;
+  width: 100%;
+  background-color: white;
+  margin: 4px 0px;
+}
+
+#landing .container.outer-2 .tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  width: 100%;
+}
+
+#landing .container.outer-2 .tabs ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 0.09em solid #d5d4d4;
+  padding-left: 0px;
+  width: 100%;
+  margin: 0px;
+  height: 50px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#landing .container.outer-2 .tabs ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+#landing .container.outer-2 .tabs ul li.is-active a {
+  border-bottom: 0.09em solid #3c3b3b;
+}
+
+#landing .container.outer-2 .tabs ul li a {
+  border-bottom: 0.09em solid transparent;
+  cursor: pointer;
+  margin-bottom: -16px;
+  width: 100%;
+  padding-bottom: 12px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+#landing .container.outer-2 .tabs ul li a:hover {
+  border-bottom: 0.09em solid #3c3b3b;
+}
+
+#landing .container.outer-2 .tab {
+  -webkit-animation: fade .6s;
+          animation: fade .6s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#landing .container.outer-2 .tab div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 0.09em solid #EEEEEE;
+  margin: auto;
+  width: 96%;
+  text-transform: capitalize;
+}
+
+#landing .container.outer-2 .tab div:first-of-type {
+  border-bottom: none;
+}
+
+#landing .container.outer-2 .tab div:first-of-type span {
+  font-size: 12px;
+  height: 32px;
+  line-height: 32px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+#landing .container.outer-2 .tab div:first-of-type span:nth-of-type(4) {
+  font-weight: 100;
+}
+
+#landing .container.outer-2 .tab div:last-of-type {
+  border-bottom: none;
+}
+
+#landing .container.outer-2 .tab div span {
+  display: table-cell;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+
+#landing .container.outer-2 .tab div span:nth-of-type(1) {
+  padding-left: 6px;
+  text-align: left;
+  width: 100%;
+}
+
+#landing .container.outer-2 .tab div span:nth-of-type(n+2) {
+  font-weight: 200;
+  width: 16%;
+}
+
+#landing .container.outer-2 .tab div span:nth-of-type(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#landing .container.outer-2 .tab div span:nth-of-type(2) svg {
+  height: 18px;
+  width: 18px;
+}
+
+#landing .container.outer-2 .tab div span:nth-of-type(2) svg.franchise-inf {
+  fill: #8c9ba5;
+}
+
+#landing .container.outer-2 .tab div span:nth-of-type(2) svg.franchise-frc {
+  fill: #288cd2;
+}
+
+#landing .container.outer-2 .tab div span:nth-of-type(2) svg.franchise-wol {
+  fill: #e2a226;
+}
+
+#landing .container.outer-2 .tab div span:nth-of-type(2) svg.franchise-upw {
+  fill: #e6783d;
+}
+
+#landing .container.outer-2 .tab div span:nth-of-type(2) svg.franchise-fip {
+  fill: #598544;
+}
+
+#landing .container.outer-2 .tab div span:nth-of-type(4) {
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 375px) {
+  #landing {
+    max-width: 425px;
+    margin-top: 16px;
+    width: 90%;
+  }
+
+  #landing .container.outer-1 .standings div:first-of-type span {
+    font-size: 20px;
+  }
+
+  #landing .container.outer-1 .standings div:first-of-type span:nth-of-type(n+2) {
+    font-size: 12px;
+  }
+
+  #landing .container.outer-1 .standings div span:nth-of-type(1) {
+    padding-left: 6px;
+  }
+}
+
+@media only screen and (min-width: 694px) {
+  #landing {
+    max-width: 1024px;
+    margin-top: 32px;
+  }
+
+  #landing .container.outer-1 {
+    height: 648px;
+  }
+
+  #landing .container.outer-1 .schedule {
+    width: calc(50% - 4px);
+    margin: 0px 4px 4px 0px;
+    height: calc(55% - 8px);
+  }
+
+  #landing .container.outer-1 .performance {
+    width: calc(50% - 4px);
+    margin: 0px 0px 4px 4px;
+    height: calc(55% - 8px);
+  }
+
+  #landing .container.outer-1 .standings {
+    margin: 4px 0px 4px 0px;
+    height: calc(45% - 4px);
+  }
+
+  #landing .container.outer-1 .standings div span:nth-of-type(n+7) {
+    display: inline;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #landing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+
+  #landing .container.outer-1 {
+    width: 65%;
+    margin-right: 4px;
+  }
+
+  #landing .container.outer-1 .standings {
+    margin: 4px 0px 0px 0px;
+    height: 45%;
+  }
+
+  #landing .container.outer-2 {
+    width: 35%;
+    margin: 0px 0px 0px 4px;
+  }
+}
+
+#franchise {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  max-width: 1024px;
+  width: 98%;
+  margin: auto;
+  margin-top: 8px;
+  -webkit-animation: loading 1.6s;
+          animation: loading 1.6s;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#franchise .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  background-color: white;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#franchise .header span {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-family: Monoton;
+}
+
+#franchise .header span.franchise-1 {
+  color: #8c9ba5;
+}
+
+#franchise .header span.franchise-2 {
+  color: #288cd2;
+}
+
+#franchise .header span.franchise-3 {
+  color: #598544;
+}
+
+#franchise .header span.franchise-4 {
+  color: #e6783d;
+}
+
+#franchise .header span.franchise-5 {
+  color: #e2a226;
+}
+
+#franchise .header span:first-of-type {
+  margin: auto;
+}
+
+#franchise .header span:last-of-type {
+  display: none;
+}
+
+#franchise .table {
+  width: 100%;
+  background-color: white;
+}
+
+#franchise .table div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 0.09em solid #EEEEEE;
+  margin: auto;
+  width: 96%;
+  text-transform: capitalize;
+}
+
+#franchise .table div:first-of-type {
+  border-bottom: none;
+}
+
+#franchise .table div:first-of-type span {
+  font-size: 12px;
+  height: 32px;
+  line-height: 32px;
+  font-weight: 100;
+  text-transform: uppercase;
+  background-color: #EEEEEE;
+}
+
+#franchise .table div:first-of-type span:nth-of-type(4) {
+  font-weight: 100;
+}
+
+#franchise .table div:last-of-type {
+  border-bottom: none;
+}
+
+#franchise .table div span {
+  display: table-cell;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+
+#franchise .table div span:nth-of-type(1) {
+  width: 36px;
+}
+
+#franchise .table div span:nth-of-type(2) {
+  padding-left: 6px;
+  text-align: left;
+  width: calc(100% - 36px);
+  font-size: 15px;
+}
+
+#franchise .table div span:nth-of-type(n+3) {
+  font-weight: 200;
+  width: 16%;
+}
+
+#franchise .table:last-of-type div:last-of-type {
+  padding-bottom: 12px;
+}
+
+@media only screen and (min-width: 375px) {
+  #franchise {
+    margin-top: 16px;
+    width: 90%;
+  }
+
+  #franchise .table div span:nth-of-type(2) {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  #franchise .header {
+    height: 110px;
+    line-height: 110px;
+  }
+
+  #franchise .header span {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 507px) {
+  #franchise .header span {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (min-width: 694px) {
+  #franchise {
+    margin-top: 32px;
+  }
+
+  #franchise .header span {
+    font-size: 28px;
+  }
+
+  #franchise .header span:first-of-type {
+    margin: 0px;
+    padding-left: 28px;
+  }
+
+  #franchise .header span:last-of-type {
+    display: inline;
+    padding-right: 28px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #franchise .header span {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #franchise .header span {
+    font-size: 42px;
+  }
+}
+
+#schedule {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 98%;
+  margin: auto;
+  margin-top: 8px;
+  -webkit-animation: loading 1.6s;
+          animation: loading 1.6s;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#schedule .table-date {
+  width: 25%;
+}
+
+#schedule .table-date > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 144px;
+  margin: 8px 0px;
+  background-color: white;
+}
+
+#schedule .table-date > div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  height: 80%;
+  width: 80%;
+  border-right: 2px solid #EEEEEE;
+}
+
+#schedule .table-date > div div span {
+  width: 100%;
+  text-align: center;
+  padding-right: 10%;
+}
+
+#schedule .table-date > div div span:first-of-type {
+  font-family: Monoton;
+  font-size: 28px;
+}
+
+#schedule .table-date > div div span:last-of-type {
+  font-weight: 300;
+  font-size: 18px;
+  position: relative;
+  top: -4px;
+}
+
+#schedule .table-game {
+  width: 50%;
+}
+
+#schedule .table-game > div {
+  height: 72px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+}
+
+#schedule .table-game > div.league-bye div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: 36px;
+}
+
+#schedule .table-game > div.league-bye div svg {
+  opacity: .2;
+  padding: 0px 2px;
+  height: 24px;
+  width: 24px;
+}
+
+#schedule .table-game > div.league-bye div svg.franchise-inf {
+  fill: #8c9ba5;
+}
+
+#schedule .table-game > div.league-bye div svg.franchise-frc {
+  fill: #288cd2;
+}
+
+#schedule .table-game > div.league-bye div svg.franchise-wol {
+  fill: #e2a226;
+}
+
+#schedule .table-game > div.league-bye div svg.franchise-upw {
+  fill: #e6783d;
+}
+
+#schedule .table-game > div.league-bye div svg.franchise-fip {
+  fill: #598544;
+}
+
+#schedule .table-game > div:nth-child(even) {
+  margin-bottom: 8px;
+}
+
+#schedule .table-game > div:nth-child(odd) {
+  margin-top: 8px;
+}
+
+#schedule .table-game > div:nth-child(odd) div.border {
+  width: 100%;
+  height: 1px;
+  background-color: #EEEEEE;
+}
+
+#schedule .table-game > div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+}
+
+#schedule .table-game > div div.game {
+  width: calc(100% - 60px);
+}
+
+#schedule .table-game > div div.game > span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-transform: capitalize;
+  padding-left: 4px;
+}
+
+#schedule .table-game > div div.game > span.home {
+  position: relative;
+  top: 4px;
+}
+
+#schedule .table-game > div div.game > span.home span:first-of-type {
+  text-transform: uppercase;
+}
+
+#schedule .table-game > div div.game > span.home span:last-of-type {
+  display: none;
+}
+
+#schedule .table-game > div div.game > span.visitor {
+  position: relative;
+  bottom: 4px;
+}
+
+#schedule .table-game > div div.game > span.visitor span:first-of-type {
+  text-transform: uppercase;
+}
+
+#schedule .table-game > div div.game > span.visitor span:last-of-type {
+  display: none;
+}
+
+#schedule .table-game > div div.game > span svg {
+  padding-right: 8px;
+  height: 18px;
+  width: 18px;
+}
+
+#schedule .table-game > div div.game > span svg.franchise-inf {
+  fill: #8c9ba5;
+}
+
+#schedule .table-game > div div.game > span svg.franchise-frc {
+  fill: #288cd2;
+}
+
+#schedule .table-game > div div.game > span svg.franchise-wol {
+  fill: #e2a226;
+}
+
+#schedule .table-game > div div.game > span svg.franchise-upw {
+  fill: #e6783d;
+}
+
+#schedule .table-game > div div.game > span svg.franchise-fip {
+  fill: #598544;
+}
+
+#schedule .table-game > div div.time {
+  width: 60px;
+}
+
+#schedule .table-game > div div.time > span {
+  padding-right: 4px;
+  font-size: 14px;
+}
+
+#schedule .table-game > div div.final {
+  width: 60px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+#schedule .table-game > div div.final > span {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+#schedule .table-game > div div.final > span.score {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+}
+
+#schedule .table-game > div div.final > span.score span {
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  padding-right: 4px;
+  font-weight: 300;
+}
+
+#schedule .table-game > div div.final > span.score span.home-score {
+  position: relative;
+  top: 4px;
+}
+
+#schedule .table-game > div div.final > span.score span.visitor-score {
+  position: relative;
+  bottom: 4px;
+}
+
+#schedule .table-game > div div.border {
+  width: 0px;
+  height: 0px;
+}
+
+#schedule .table-bye {
+  width: 25%;
+}
+
+#schedule .table-bye > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 8px 0px;
+  height: 144px;
+  background-color: white;
+}
+
+#schedule .table-bye > div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 80%;
+  width: 80%;
+  border-left: 2px solid #EEEEEE;
+  text-align: center;
+  position: relative;
+}
+
+#schedule .table-bye > div div span:first-of-type {
+  padding-left: 10%;
+  position: absolute;
+  font-family: Monoton;
+  font-size: 24px;
+}
+
+#schedule .table-bye > div div span svg {
+  opacity: .2;
+  padding-left: 10%;
+  height: 80%;
+  width: 80%;
+}
+
+#schedule .table-bye > div div span svg.franchise-inf {
+  fill: #8c9ba5;
+}
+
+#schedule .table-bye > div div span svg.franchise-frc {
+  fill: #288cd2;
+}
+
+#schedule .table-bye > div div span svg.franchise-wol {
+  fill: #e2a226;
+}
+
+#schedule .table-bye > div div span svg.franchise-upw {
+  fill: #e6783d;
+}
+
+#schedule .table-bye > div div span svg.franchise-fip {
+  fill: #598544;
+}
+
+@media only screen and (min-width: 375px) {
+  #schedule {
+    margin-top: 16px;
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  #schedule .table-date {
+    width: 20%;
+  }
+
+  #schedule .table-date > div div span:first-of-type {
+    font-size: 30px;
+  }
+
+  #schedule .table-date > div div span:last-of-type {
+    font-size: 20px;
+  }
+
+  #schedule .table-game {
+    width: 60%;
+  }
+
+  #schedule .table-game > div.league-bye div svg {
+    padding: 0px 4px;
+    height: 36px;
+    width: 36px;
+  }
+
+  #schedule .table-game > div div.final span.score span {
+    font-size: 16px;
+  }
+
+  #schedule .table-bye {
+    width: 20%;
+  }
+
+  #schedule .table-bye > div div span:first-of-type {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 507px) {
+  #schedule .table-game > div.league-bye div svg {
+    padding: 0px 8px;
+  }
+
+  #schedule .table-game > div div.game > span.home span:first-of-type {
+    display: none;
+  }
+
+  #schedule .table-game > div div.game > span.home span:last-of-type {
+    display: inline;
+  }
+
+  #schedule .table-game > div div.game > span.visitor span:first-of-type {
+    display: none;
+  }
+
+  #schedule .table-game > div div.game > span.visitor span:last-of-type {
+    display: inline;
+  }
+
+  #schedule .table-bye > div div span svg {
+    height: 70%;
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 694px) {
+  #schedule {
+    max-width: 1024px;
+    margin-top: 32px;
+  }
+
+  #schedule .table-date > div div span:first-of-type {
+    font-size: 36px;
+  }
+
+  #schedule .table-date > div div span:last-of-type {
+    font-size: 20px;
+  }
+
+  #schedule .table-game > div.league-bye div svg {
+    padding: 0px 16px;
+    height: 42px;
+    width: 42px;
+  }
+
+  #schedule .table-game > div div.game {
+    width: calc(100% - 100px);
+  }
+
+  #schedule .table-game > div div.game > span {
+    padding-left: 8px;
+  }
+
+  #schedule .table-game > div div.time {
+    width: 100px;
+  }
+
+  #schedule .table-game > div div.time span {
+    font-size: 16px;
+  }
+
+  #schedule .table-game > div div.final {
+    width: 100px;
+  }
+
+  #schedule .table-bye > div div span:first-of-type {
+    font-size: 36px;
+  }
+
+  #schedule .table-bye > div div span svg {
+    height: 60%;
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #schedule .table-game > div.league-bye div svg {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #schedule .table-game > div.league-bye div svg {
+    opacity: .2;
+    padding: 0px 24px;
+    height: 60px;
+    width: 60px;
+  }
+
+  #schedule .table-bye > div div span svg {
+    height: 50%;
+    width: 50%;
+  }
+}
+

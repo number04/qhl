@@ -1,0 +1,129 @@
+// flexbox
+
+@mixin flexbox-center
+    display: flex
+    align-items: center
+    align-content: center
+    justify-content: center
+
+@mixin flexbox-center-wrap
+    display: flex
+    align-items: center
+    align-content: center
+    justify-content: center
+    flex-wrap: wrap
+
+    display: -webkit-flex
+    -webkit-flex-wrap: wrap
+
+// box-shadow
+
+@mixin box-shadow
+	-webkit-box-shadow: 0em 0em 0.04em 0.04em darken($off-white, 10%)
+    -moz-box-shadow: 0em 0em 0.04em 0.04em darken($off-white, 10%)
+    box-shadow: 0em 0em 0em 0.04em darken($off-white, 10%)
+
+// transitions
+
+@mixin transition($argument ...)
+    -webkit-transition: $argument
+    -moz-transition: $argument
+    -ms-transition: $argument
+    -o-transition: $argument
+    transition: $argument
+
+// transforms
+
+@mixin transform($argument)
+    -webkit-transform: $argument
+    -moz-transform: $argument
+    -ms-transform: $argument
+    -o-transform: $argument
+    transform: $argument
+
+@mixin rotate ($deg)
+    @include transform(rotate($deg))
+
+@mixin scale3d($x,$y,$z)
+	@include transform(scale3d($x,$y,$z))
+
+@mixin translate($x,$y)
+	@include transform(translate($x,$y))
+
+// animations
+
+@mixin animation($argument)
+    -webkit-animation: $argument
+    -moz-animation: $argument
+    -ms-animation: $argument
+    -o-animation: $argument
+    animation: $argument
+
+// background image
+
+@mixin background($path, $position: 50%, $repeat: no-repeat)
+    background:
+        image: url($path)
+        position: $position
+        repeat: $repeat
+        size: cover
+
+// modal 
+
+@mixin overlay($offset: 0)
+    bottom: $offset
+    left: $offset
+    position: fixed
+    right: $offset
+    top: $offset
+
+@mixin delete
+    @include unselectable
+    -moz-appearance: none
+    -webkit-appearance: none
+    border: none
+    border-radius: 50%
+    cursor: pointer
+    display: inline-block
+    flex-grow: 0
+    flex-shrink: 0
+    font-size: 0
+    height: 28px
+    max-height: 28px
+    max-width: 28px
+    min-height: 28px
+    min-width: 28px
+    outline: none
+    position: relative
+    vertical-align: top
+    width: 28px
+    
+    &:before, &:after
+        content: ""
+        display: block
+        left: 50%
+        position: absolute
+        top: 50%
+        transform: translateX(-50%) translateY(-50%) rotate(45deg)
+        transform-origin: center center
+   
+    &:before
+        height: 2px
+        width: 50%
+        background-color: $primary-black
+    
+    &:after
+        height: 50%
+        width: 2px
+        background-color: $primary-black
+    
+    &:hover, &:focus
+        @include transition(all .2s ease-in-out)
+        background-color: darken($primary-white, 5%)
+    
+@mixin unselectable
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none

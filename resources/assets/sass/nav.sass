@@ -1,0 +1,99 @@
+nav
+    @include flexbox-center
+    height: 100px
+    width: 100%
+    background-color: $primary-white
+
+    span
+        @include flexbox-center
+        height: 100%
+
+        &:first-of-type
+            width: 18%
+            justify-content: flex-start
+            margin-left: 16px
+
+        &:last-of-type
+            width: 82%
+            justify-content: space-between
+            margin-right: 16px
+
+        h1
+            display: none
+        
+        a
+            @include flexbox-center
+                 
+            svg
+                height: 28px
+                width: 28px
+
+                &.logo
+                    use
+                        fill: $primary-black
+
+                &.logo-inf
+                    use
+                        fill: $franchise-1
+
+                &.logo-frc
+                    use
+                        fill: $franchise-2
+
+                &.logo-wol
+                    use
+                        fill: $franchise-5
+
+                &.logo-upw
+                    use
+                        fill: $franchise-4
+
+                &.logo-fip
+                    use
+                        fill: $franchise-3
+
+@media only screen and (min-width: 375px)
+    nav
+        span
+            &:first-of-type
+                margin-left: 8%
+
+            &:last-of-type
+                margin-right: 8%
+
+            a
+                @include flexbox-center
+                
+                svg
+                    height: 32px
+                    width: 32px
+
+@media only screen and (min-width: 768px)
+    nav
+        span
+            &:first-of-type
+                margin-left: 32px
+                width: calc(100% - 288px)
+
+            &:last-of-type
+                margin-right: 32px
+                width: 288px
+
+            h1
+                display: inline
+                margin-left: 16px
+                font-size: 24px
+                text-transform: capitalize
+                font-weight: $thin
+                            
+            a              
+                svg
+                    &.logo
+                        height: 64px
+                        width: 64px
+
+@media only screen and (min-width: 1024px)
+    nav
+        span
+            h1
+                font-size: 32px

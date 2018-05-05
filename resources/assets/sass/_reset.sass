@@ -1,0 +1,46 @@
+html
+	margin: 0
+	padding: 0
+	border: 0
+	text-decoration: none
+	outline: none
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
+
+	body
+		background-color: $primary
+		font-family: $sans-serif
+		font-weight: $light
+		font-size: $font-size-base
+		color: $primary-black
+		line-height: 1.4
+		margin: 0
+		padding: 0
+		border: 0
+
+		#app
+			@include flexbox-center-wrap
+			min-height: 100vh
+			align-content: space-between
+
+button
+	background-color: transparent
+	cursor: pointer
+	padding: 0
+	border: none
+	outline: none
+
+input[type=submit]
+    -webkit-appearance: none
+
+input:focus
+    outline: none
+
+a 
+	text-decoration: none
+
+a:visited
+	color: inherit
+
+ul
+	margin: 0px

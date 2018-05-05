@@ -1,0 +1,393 @@
+#schedule
+    @include flexbox-center
+    width: 98%
+    margin: auto
+    margin-top: 8px
+    animation: loading 1.6s
+
+    @keyframes loading
+        0%
+            opacity: 0
+
+        100%
+            opacity: 1
+
+    .table-date
+        width: 25%
+                
+        > div
+            @include flexbox-center
+            height: 144px
+            margin: 8px 0px
+            background-color: $primary-white
+
+            div
+                @include flexbox-center-wrap
+                height: 80%
+                width: 80%
+                border-right: 2px solid $primary
+
+                span
+                    width: 100%
+                    text-align: center
+                    padding-right: 10%
+
+                    &:first-of-type
+                        font-family: Monoton
+                        font-size: 28px
+
+                    &:last-of-type
+                        font-weight: $light
+                        font-size: 18px
+                        position: relative
+                        top: -4px
+        
+    .table-game
+        width: 50%
+        
+        > div
+            height: 72px
+            background-color: $primary-white
+            @include flexbox-center-wrap
+
+            &.league-bye
+                div
+                    @include flexbox-center
+                    position: relative
+                    top: 36px
+
+                    svg
+                        opacity: .2
+                        padding: 0px 2px
+                        height: 24px
+                        width: 24px
+                        
+                        &.franchise-inf
+                            fill: $franchise-1
+
+                        &.franchise-frc
+                            fill: $franchise-2
+
+                        &.franchise-wol
+                            fill: $franchise-5
+
+                        &.franchise-upw
+                            fill: $franchise-4
+
+                        &.franchise-fip
+                            fill: $franchise-3
+
+            
+            &:nth-child(even)
+                margin-bottom: 8px
+
+            &:nth-child(odd)
+                margin-top: 8px
+                
+                div
+                    &.border
+                        width: 100%
+                        height: 1px
+                        background-color: $primary
+       
+            div
+                @include flexbox-center-wrap
+
+                &.game 
+                    width: calc(100% - 60px)
+
+                    > span
+                        @include flexbox-center
+                        width: 100%
+                        height: 36px
+                        line-height: 36px
+                        justify-content: flex-start
+                        text-transform: capitalize
+                        padding-left: 4px
+
+                        &.home
+                            position: relative
+                            top: 4px
+
+                            span
+                                &:first-of-type
+                                    text-transform: uppercase
+
+                                &:last-of-type
+                                    display: none
+
+                        &.visitor
+                            position: relative
+                            bottom: 4px
+
+                            span
+                                &:first-of-type
+                                    text-transform: uppercase
+
+                                &:last-of-type
+                                    display: none
+                                                
+                        svg
+                            padding-right: 8px
+                            height: 18px
+                            width: 18px
+                            
+                            &.franchise-inf
+                                fill: $franchise-1
+
+                            &.franchise-frc
+                                fill: $franchise-2
+
+                            &.franchise-wol
+                                fill: $franchise-5
+
+                            &.franchise-upw
+                                fill: $franchise-4
+
+                            &.franchise-fip
+                                fill: $franchise-3
+
+                &.time
+                    width: 60px
+                    
+                    > span
+                        padding-right: 4px
+                        font-size: 14px
+
+                &.final
+                    width: 60px
+                    flex-wrap: nowrap
+
+                    > span
+                        width: 100%
+                        text-align: center
+                        text-transform: uppercase
+                        font-size: 14px
+                        font-weight: $thin
+
+                        &.score
+                            @include flexbox-center-wrap
+                            
+                            span
+                                width: 100%
+                                height: 36px
+                                line-height: 36px
+                                padding-right: 4px
+                                font-weight: $light 
+
+                                &.home-score
+                                    position: relative
+                                    top: 4px
+
+                                &.visitor-score
+                                    position: relative
+                                    bottom: 4px
+
+                &.border
+                    width: 0px
+                    height: 0px
+                    
+    .table-bye
+        width: 25%
+
+        > div
+            @include flexbox-center
+            margin: 8px 0px
+            height: 144px
+            background-color: $primary-white
+
+            div
+                @include flexbox-center
+                height: 80%
+                width: 80%
+                border-left: 2px solid $primary
+                text-align: center
+                position: relative
+
+                span
+                    &:first-of-type
+                        padding-left: 10%
+                        position: absolute
+                        font-family: Monoton
+                        font-size: 24px
+                    
+                    svg
+                        opacity: .2
+                        padding-left: 10%
+                        height: 80%
+                        width: 80%
+                        
+                        &.franchise-inf
+                            fill: $franchise-1
+
+                        &.franchise-frc
+                            fill: $franchise-2
+
+                        &.franchise-wol
+                            fill: $franchise-5
+
+                        &.franchise-upw
+                            fill: $franchise-4
+
+                        &.franchise-fip
+                            fill: $franchise-3
+
+@media only screen and (min-width: 375px)
+    #schedule
+        margin-top: 16px 
+        width: 90%
+
+@media only screen and (min-width: 425px)
+    #schedule
+        .table-date
+            width: 20%
+
+            > div
+                div
+                    span
+                        &:first-of-type
+                            font-size: 30px
+
+                        &:last-of-type
+                            font-size: 20px
+            
+        .table-game
+            width: 60%
+            
+            > div
+                &.league-bye
+                    div
+                        svg
+                            padding: 0px 4px
+                            height: 36px
+                            width: 36px
+
+                div
+                    &.final
+                        span
+                            &.score
+                                span
+                                    font-size: 16px
+
+        .table-bye
+            width: 20%
+
+            > div
+                div
+                    span
+                        &:first-of-type
+                            font-size: 24px
+   
+@media only screen and (min-width: 507px)
+    #schedule
+        .table-game
+            > div
+                &.league-bye
+                    div
+                        svg
+                            padding: 0px 8px
+                div
+                    &.game 
+                        > span
+                            &.home
+                                span
+                                    &:first-of-type
+                                        display: none
+
+                                    &:last-of-type
+                                        display: inline
+
+                            &.visitor
+                                span
+                                    &:first-of-type
+                                        display: none
+
+                                    &:last-of-type
+                                        display: inline
+        .table-bye
+            > div
+                div
+                    span
+                        svg
+                            height: 70%
+                            width: 70%
+
+@media only screen and (min-width: 694px)
+     #schedule
+        max-width: 1024px
+        margin-top: 32px
+
+        .table-date
+            > div
+                div
+                    span
+                        &:first-of-type
+                            font-size: 36px
+
+                        &:last-of-type
+                            font-size: 20px
+            
+        .table-game
+            > div
+                &.league-bye
+                    div
+                        svg
+                            padding: 0px 16px
+                            height: 42px
+                            width: 42px
+                div
+                    &.game 
+                        width: calc(100% - 100px)
+
+                        > span
+                            padding-left: 8px
+
+                    &.time
+                        width: 100px
+
+                        span
+                            font-size: 16px
+
+                    &.final
+                        width: 100px
+
+        .table-bye
+            > div
+                div
+                    span
+                        &:first-of-type
+                            font-size: 36px
+                        
+                        svg
+                            height: 60%
+                            width: 60%
+
+@media only screen and (min-width: 768px)
+    #schedule
+        .table-game
+            > div
+                &.league-bye
+                    div
+                        svg
+                            height: 50px
+                            width: 50px
+
+@media only screen and (min-width: 1024px)
+    #schedule
+        .table-game
+            > div
+                &.league-bye
+                    div
+                        svg
+                            opacity: .2
+                            padding: 0px 24px
+                            height: 60px
+                            width: 60px
+
+        .table-bye
+            > div
+                div
+                    span
+                        svg
+                            height: 50%
+                            width: 50%
