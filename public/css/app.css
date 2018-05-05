@@ -240,12 +240,12 @@ footer {
   width: 100%;
   background-color: white;
   margin-top: 8px;
-  -webkit-animation: loading 1.6s;
-          animation: loading 1.6s;
+  -webkit-animation: loading 2.4s;
+          animation: loading 2.4s;
 }
 
 @-webkit-keyframes loading {
-  0% {
+  0%, 60% {
     opacity: 0;
   }
 
@@ -255,7 +255,7 @@ footer {
 }
 
 @keyframes loading {
-  0% {
+  0%, 60% {
     opacity: 0;
   }
 
@@ -334,7 +334,7 @@ footer > ul li:nth-child(n+3) > a > svg {
 }
 
 @keyframes loading {
-  0% {
+  0%, 60% {
     opacity: 0;
   }
 
@@ -1132,7 +1132,7 @@ footer > ul li:nth-child(n+3) > a > svg {
 }
 
 @keyframes loading {
-  0% {
+  0%, 60% {
     opacity: 0;
   }
 
@@ -1348,7 +1348,7 @@ footer > ul li:nth-child(n+3) > a > svg {
 }
 
 @keyframes loading {
-  0% {
+  0%, 60% {
     opacity: 0;
   }
 
