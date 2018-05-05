@@ -781,7 +781,6 @@ footer > ul li:nth-child(n+3) > a > svg {
 }
 
 #landing .container.outer-1 .standings div:first-of-type span {
-  font-size: 20px;
   height: 60px;
   line-height: 60px;
   font-weight: 400;
@@ -1027,14 +1026,6 @@ footer > ul li:nth-child(n+3) > a > svg {
     max-width: 425px;
     margin-top: 16px;
     width: 90%;
-  }
-
-  #landing .container.outer-1 .standings div:first-of-type span {
-    font-size: 20px;
-  }
-
-  #landing .container.outer-1 .standings div:first-of-type span:nth-of-type(n+2) {
-    font-size: 12px;
   }
 
   #landing .container.outer-1 .standings div span:nth-of-type(1) {
