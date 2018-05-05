@@ -240,8 +240,8 @@ footer {
   width: 100%;
   background-color: white;
   margin-top: 8px;
-  -webkit-animation: loading 2.4s;
-          animation: loading 2.4s;
+  -webkit-animation: loading 2s;
+          animation: loading 2s;
 }
 
 @-webkit-keyframes loading {
@@ -329,8 +329,8 @@ footer > ul li:nth-child(n+3) > a > svg {
   width: 98%;
   margin: auto;
   margin-top: 8px;
-  -webkit-animation: loading 2.4s;
-          animation: loading 2.4s;
+  -webkit-animation: loading 2s;
+          animation: loading 2s;
 }
 
 @keyframes loading {
@@ -1127,8 +1127,8 @@ footer > ul li:nth-child(n+3) > a > svg {
   width: 98%;
   margin: auto;
   margin-top: 8px;
-  -webkit-animation: loading 2.4s;
-          animation: loading 2.4s;
+  -webkit-animation: loading 2s;
+          animation: loading 2s;
 }
 
 @keyframes loading {
@@ -1343,8 +1343,8 @@ footer > ul li:nth-child(n+3) > a > svg {
   width: 98%;
   margin: auto;
   margin-top: 8px;
-  -webkit-animation: loading 2.4s;
-          animation: loading 2.4s;
+  -webkit-animation: loading 2s;
+          animation: loading 2s;
 }
 
 @keyframes loading {
