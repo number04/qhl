@@ -38,7 +38,7 @@ Route::get('data/main', function (GlobalRepository $global) {
         'data' => [
             'performance' => Player::with([
                 'member',
-            ])->where('performance', '=', $global->date() - 0)->first()->member->full_name,
+            ])->where('performance', '=', $global->date() - 1)->first()->member->full_name,
 
             'dates' => Date::where('id', '=', $global->date())->get(),
 
