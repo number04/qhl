@@ -39,6 +39,6 @@ class Player extends Model
             return '0.00';
         }
 
-        return number_format(($this->goals_against / ($this->time_on_ice / 54)),2);
+        return number_format(($this->goals_against / ($this->time_on_ice / 51)),2);
     }
 }
