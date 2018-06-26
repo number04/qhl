@@ -25,6 +25,6 @@ class Standing extends Model
 
     public function getPointsAttribute()
     {
-        return ($this->wins * 2) + $this->overtime_loses;
+        return ($this->wins * 2) + $this->overtime_losses;
     }
 }
