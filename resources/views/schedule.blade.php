@@ -28,7 +28,7 @@
         </div>
         
         <div class="table-game">
-            <div v-for="game in games.slice(0, 28)">
+            <div v-for="game in games.slice(0, 30)">
                 <div class="game">
                     <span class="home">
                         <svg :class="franchiseClass(game.home.franchise_tag)">
@@ -93,7 +93,7 @@
                 <div></div>
             </div>
 
-            <div v-for="game in games.slice(28, 40)">
+            <div v-for="game in games.slice(30, 40)">
                 <div class="game">
                     <span class="home">
                         <svg :class="franchiseClass(game.home.franchise_tag)">
