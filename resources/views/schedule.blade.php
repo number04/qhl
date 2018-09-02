@@ -151,7 +151,7 @@
                 </div>
             </div>
 
-            <div v-for="bye in byes.slice(14, 20)">
+            <div v-for="bye in byes.slice(15, 21)">
                 <div>
                     <span>bye</span>
 
