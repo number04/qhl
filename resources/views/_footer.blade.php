@@ -1,6 +1,6 @@
 <footer>
 	<ul>
-		<li>&#169 2018 QHL</li>
+		<li>&#169 2019 QHL</li>
 		
 		<li><span></span></li>
 		
